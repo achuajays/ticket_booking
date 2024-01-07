@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Welcome to Cinema!
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'movie_list' %}">Movies</a></li>
+            <li><a href="{% url 'theater_list' %}">Theaters</a></li>
+            <li><a href="{% url 'screening_list' %}">Screenings</a></li>
+            <li><a href="{% url 'book_tickets' %}">Book Tickets</a></li>
+            <li><a href="{% url 'all_tickets' %}">All Booked Tickets</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Explore the World of Cinema</h1>
+        
+        <ul>
+            <li>Discover the latest Movies</li>
+            <li>Explore Theaters near you</li>
+            <li>Check upcoming Screenings</li>
+            <li>Book Tickets for your favorite movies</li>
+            <li>View all your Booked Tickets</li>
+        </ul>
+    </main>
+
+</body>
+</html>
